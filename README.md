@@ -1,7 +1,7 @@
   # 🐍 Snake Game v2.0 - Inclusão de Novas Funcionalidades.
 
 ## 🔗 Projeto Base (v1.0)
-- **Repositório do Projeto Base (v1.0):** [Acessar Meu Repositório Base no GitHub](https://github.com/Jonathan000001/snake-game)
+[Acessar Meu Repositório Base no GitHub](https://github.com/Jonathan000001/snake-game)
 
 ---
 
