@@ -1,4 +1,4 @@
-  # 🐍 Snake Game v2.0 - Refatoração, Engenharia de Software e Novas Funcionalidades
+  # 🐍 Snake Game v2.0 - Inclusão de Novas Funcionalidades.
 
 ## 🔗 Projeto Base (v1.0)
 - **Repositório do Projeto Base (v1.0):** [Acessar Meu Repositório Base no GitHub](https://github.com/Jonathan000001/snake-game)
@@ -6,10 +6,10 @@
 ---
 
 ## 📖 Visão Geral do Projeto
-Este repositório contém a **Versão 2.0** do projeto *Snake Game*. Partindo do código base desenvolvido na versão v1.0 (disponível no repositório de referência), o objetivo deste trabalho foi aplicar conceitos práticos de **Engenharia de Software**, refatorando o código legado, implementando novos requisitos de forma iterativa e aprimorando a Experiência do Usuário (UX) e a arquitetura visual do jogo.
+Este repositório contém a **Versão 2.0** do projeto *Snake Game*. Partindo do código base desenvolvido na versão v1.0, o objetivo deste trabalho foi aplicar conceitos práticos de **Engenharia de Software**, implementando novos requisitos de forma iterativa e aprimorando a Experiência do Usuário (UX) e a arquitetura visual do jogo.
 
-## 📋 1. Engenharia de Requisitos
-Para orientar o ciclo de evolução do software, realizou-se o levantamento e a estruturação de Requisitos Funcionais (RF) e Não-Funcionais (RNF):
+## 📋 1. Levantamento de Requisitos
+Realizou-se o levantamento e a estruturação de Requisitos Funcionais (RF) e Não-Funcionais (RNF):
 
 ### Requisitos Funcionais (RF)
 - **RF01 - Condição de Derrota (Colisão com as Bordas):** O sistema deve interromper a partida (Game Over) caso as coordenadas da cabeça da cobra excedam os limites do tabuleiro (`canvas`), eliminando o comportamento anterior de atravessar paredes.
@@ -32,7 +32,7 @@ Para orientar o ciclo de evolução do software, realizou-se o levantamento e a 
 Neste projeto, a inteligência artificial (**Google Gemini**) foi utilizada com o objetivo estrito de acelerar o aprendizado e desenvolver novas habilidades técnicas. A IA não gerou o projeto de forma autônoma, mas atuou como uma ferramenta de mentoria para aprofundar o entendimento prático do código.
 
 **O que foi desenvolvido de forma 100% autônoma:**
-- **Levantamento e Gestão de Requisitos:** Toda a idealização das melhorias, a escolha de quais funcionalidades adicionar (como a regra das bordas e o padrão visual da Cobra Coral) e o planejamento do projeto foram decisões exclusivas e não contaram com o auxílio da IA.
+- **Levantamento de Requisitos:** Toda a idealização das melhorias, a escolha de quais funcionalidades adicionar e o planejamento do projeto foram decisões exclusivas e não contaram com o auxílio da IA.
 - **Estruturação do Escopo:** A definição do que seria transformado da versão 1.0 para a 2.0.
 
 **Onde a IA foi utilizada (Foco em Estudo):**
@@ -44,6 +44,3 @@ Neste projeto, a inteligência artificial (**Google Gemini**) foi utilizada com 
 - **HTML5:** Estruturação semântica e suporte ao elemento `<canvas>`.
 - **CSS3:** Flexbox para layout responsivo, manipulação de fontes externas e estilização interativa.
 - **JavaScript (ES6):** Manipulação de DOM, tratamento de eventos assíncronos (`keydown`, `click`), estruturas de controle e algoritmos de renderização.
-
-## 🎓 Conclusão
-Este projeto exemplifica a evolução real de um produto de software: a partir do código v1.0, foram aplicados processos formais de Engenharia de Software para gerenciar novos requisitos, refatorar o código base e entregar uma versão 2.0 significativamente aprimorada, documentada e com melhor experiência visual.
