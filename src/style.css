@@ -88,31 +88,34 @@ h2 {
 @media (max-width: 768px) {
     body {
         margin: 0;
-        padding: 2px 0;
+        padding: 0;
         width: 100vw;
-        overflow-x: hidden;
+        height: 100vh;
+        overflow: hidden;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
         align-items: center; 
+        justify-content: center;
     }
     
     h1 {
-        font-size: 28px;
-        margin-top: 5px;
-        margin-bottom: 5px; 
+        font-size: 24px;
+        margin-top: 0; 
+        margin-bottom: 2px;
     }
 
     h2 {
-        font-size: 18px; 
-        margin-bottom: 10px; 
+        font-size: 16px; 
+        margin-top: 0;
+        margin-bottom: 5px;
     }
 
     canvas {
-        width: 90vw;
-        height: 90vw;
-        max-width: 400px;
-        max-height: 400px;
+        width: 85vw;
+        height: 85vw;
+        max-width: 380px;
+        max-height: 380px;
         margin: 0 auto;
     }
 
@@ -120,25 +123,25 @@ h2 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 15px;
+        margin-top: 5px;
     }
 
     .horizontal-controls {
         display: flex;
-        gap: 15px;
-        margin: 10px 0;
+        gap: 10px;
+        margin: 5px 0;
         align-items: center;
         justify-content: center;
     }
 
     .seta {
         display: block;
-        width: 65px;
-        height: 65px;
-        font-size: 28px;
+        width: 60px;
+        height: 60px;
+        font-size: 26px;
         background-color: rgb(74, 143, 74);
         border: none;
-        border-radius: 15px;
+        border-radius: 12px;
         box-shadow: 0px 4px 0px rgb(40, 80, 40);
         cursor: pointer;
         touch-action: manipulation;
@@ -153,16 +156,16 @@ h2 {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 65px !important;
-        height: 65px !important;
+        width: 60px !important;
+        height: 60px !important;
         padding: 0 !important;
         margin: 0 !important;
         background-color: rgb(74, 143, 74) !important;
         border: none !important;
-        border-radius: 15px !important;
+        border-radius: 12px !important;
         box-shadow: 0px 4px 0px rgb(40, 80, 40) !important;
-        color: transparent !important;
-        font-size: 0 !important;  
+        color: transparent !important; 
+        font-size: 0 !important;       
     }
 
     #btn-reset:active {
@@ -172,13 +175,9 @@ h2 {
 
     #btn-reset::after {
         content: "🔄"; 
-        font-size: 28px !important;
+        font-size: 26px !important;
         display: block;
-        color: #2b0808 !important;
-    }
-
-    .instrucoes {
-        display: none;
+        color: #2b0808 !important; 
     }
 }
 
