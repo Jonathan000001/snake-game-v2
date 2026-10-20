@@ -57,7 +57,7 @@ function gameLoop(){
         return;  
     }
 
-    // Adicionei 'let' antes do 'i' aqui para seguir as boas práticas
+
     for(let i = 1; i < snake.length; i++){ 
         if(snake[0].x == snake[i].x && snake[0].y == snake[i].y){
             clearInterval(game);
@@ -122,3 +122,24 @@ function resetGame() {
 }
 
 btnReset.addEventListener("click", resetGame);
+
+const btnUp = document.getElementById("btn-up");
+const btnDown = document.getElementById("btn-down");
+const btnLeft = document.getElementById("btn-left");
+const btnRight = document.getElementById("btn-right");
+
+btnUp.addEventListener("click", () => {
+    if(direction !="down") direction = "up";
+});
+
+btnDown.addEventListener("click", () => {
+    if(direction !="up") direction = "down";
+});
+
+btnLeft.addEventListener("click", () => {
+    if(direction !="right") direction = "left";
+});
+
+btnRight.addEventListener("click", () => {
+    if(direction !="left") direction = "right";
+});
