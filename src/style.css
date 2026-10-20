@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-body{
+body {
     background-color: #2b0808;
     min-height: 100vh;
     margin: 0;
@@ -11,28 +11,30 @@ body{
     flex-direction: column;
     font-family: 'Press Start 2P', cursive;
     color: rgb(74, 143, 74);
+    
     overflow-x: hidden; 
     text-align: center;
 }
+
 canvas {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     max-width: 90vw;
     max-height: 90vw;
 }
 
-h1{
-  font-size: 45px;
-  margin-bottom: 20px;
-  margin-top: 0;
-  letter-spacing: 3px;
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
 }
 
-h2{
-  margin-bottom: 20px;
-  margin-top: 0;
-  letter-spacing: 3px;
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+h2 {
+    margin-bottom: 20px;
+    margin-top: 0;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
 }
 
 #btn-reset {
@@ -40,7 +42,7 @@ h2{
     margin-top: 20px;
     background-color: rgb(74, 143, 74);
     color: #2b0808;
-    font-family: 'Press Start 2p', cursive;
+    font-family: 'Press Start 2P', cursive;
     border: 2px solid rgb(74, 143, 74);
     border-radius: 45vh;
     padding: 25px 30px;
@@ -48,67 +50,74 @@ h2{
     transition: all 0.3s ease;
 }
 
-#btn-reset:hover{
+#btn-reset:hover {
     background-color: #2b0808;
     color: rgb(74, 143, 74);
     box-shadow: 0px 0px 15px rgb(74, 143, 74);
 }
 
-#btn-reset:active{
-  transform: scale(0.95);
+#btn-reset:active {
+    transform: scale(0.95);
 }
 
-.mobile-controls{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
+.mobile-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
 }
 
-.horizontal-controls{
-  display: flex;
-  gap: 60px;
-  margin: 5px 0;
+.horizontal-controls {
+    display: flex;
+    gap: 60px;
+    margin: 5px 0;
 }
 
 .mobile-controls button {
-  width: 65px;
-  height: 65px;
-  font-size: 24px;
-  background-color: rgb(74, 143, 74);
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-  touch-action: manipulation;
-  box-shadow: 0px 4px 0px rgb(40, 80, 40);
+    width: 65px;
+    height: 65px;
+    font-size: 24px;
+    background-color: rgb(74, 143, 74);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    touch-action: manipulation;
+    box-shadow: 0px 4px 0px rgb(40, 80, 40);
 }
 
-.mobile-controls button:active{
-  transform: translateY(4px);
-  box-shadow: none;
+.mobile-controls button:active {
+    transform: translateY(4px);
+    box-shadow: none;
 }
 
-@media (min-width:768px) {
-  h1 {
-    font-size:26px;
-    letter-spacing: 1px;
-  }
-  
-  h2 {
-    font-size: 18px;
-  }
+@media (max-width: 768px) {
+        font-size: 26px; 
+        letter-spacing: 1px;
+    }
 
-  .mobile-controls{
-    transform: scale(0.9);
-    margin-top: 5px;
-  }
-    
-  #btn-reset {
-    font-size: 10px;
-    padding: 10px 15px;
-    margin-top: 10px;
-    margin-boton: 10px;
-    width: 60%;
-    border-radius: 20px;
-  }
+    h2 {
+        font-size: 18px; 
+    }
+
+    .mobile-controls {
+        order: 1; 
+        margin-top: 10px;
+        transform: scale(0.9);
+    }
+
+    #btn-reset {
+        order: 2; 
+        font-size: 10px;
+        padding: 10px 15px;
+        margin-top: 15px; 
+        margin-bottom: 20px; 
+        width: 60%; 
+        border-radius: 20px;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-controls {
+        display: none;
+    }
 }
