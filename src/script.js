@@ -97,7 +97,8 @@ function gameLoop(){
     snake.unshift(newHead);
 }
 
-let game = setInterval(gameLoop, 100);
+let velocidadeAtual = window.innerWidth <= 768 ? 125 : 100;
+let game = setInterval(gameLoop, velocidadeAtual);
 let btnReset = document.getElementById("btn-reset");
 
 function resetGame() {
@@ -118,7 +119,8 @@ function resetGame() {
     document.getElementById("score").innerHTML = score;
     
     clearInterval(game);
-    game = setInterval(gameLoop, 100);
+    let velocidadeAtual = window.innerWidth <= 768 ? 125 : 100;
+    game = setInterval(gameLoop, velocidadeAtual);
 }
 
 btnReset.addEventListener("click", resetGame);
