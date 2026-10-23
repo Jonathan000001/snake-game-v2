@@ -20,7 +20,8 @@ function drawBackground() {
 }
 
 function drawSnake(){
-    let coralColors = ["black", "white", "black", "red", "red"];
+    let coralColors = ["black", "white", "red", "red", "white"];
+
 
     for (let i = 0; i < snake.length; i++){
         let currentColor = coralColors[i % coralColors.length];
@@ -136,6 +137,19 @@ function resetGame() {
 }
 
 btnReset.addEventListener("click", resetGame);
+
+let btnFoto = document.getElementById("btn-foto-coral");
+let fotoContainer = document.getElementById("foto-coral-container");
+
+btnFoto.addEventListener("click", function() {
+    fotoContainer.classList.toggle("mostrar");
+    
+    if (fotoContainer.classList.contains("mostrar")) {
+        btnFoto.innerText = "Ocultar Foto";
+    } else {
+        btnFoto.innerText = "Ver a Espécie Real";
+    }
+});
 
 const btnUp = document.getElementById("btn-up");
 const btnDown = document.getElementById("btn-down");

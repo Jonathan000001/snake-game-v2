@@ -78,11 +78,21 @@ h2 {
 }
 
 .instrucoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
     font-size: 10px;
-    margin-top: 30px;
+    margin-top: 25px;
     color: rgb(74, 143, 74);
-    opacity: 0.6;
-    letter-spacing: 1px;
+    opacity: 0.7; 
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 2px 2px 0px #1a1a1a;
+}
+
+.instrucoes .divisor {
+    color: lightgray;
+    opacity: 0.5;
 }
 
 @media (max-width: 768px) {
@@ -190,3 +200,90 @@ h2 {
     box-shadow: none;
     background-color: rgb(74, 143, 74);
 }
+
+#info-coral {
+    background-color: #1a1a1a;
+    border: 2px solid rgb(74, 143, 74);
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-top: 30px;
+    max-width: 450px;
+    text-align: center;
+    box-shadow: 0px 4px 0px rgb(40, 80, 40);
+}
+
+#info-coral h3 {
+    color: rgb(74, 143, 74);
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+#info-coral p {
+    color: lightgray;
+    font-size: 10px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    #info-coral {
+        max-width: 85vw;
+        padding: 10px 15px;
+        margin-top: 20px;
+    }
+    #info-coral h3 {
+        font-size: 12px;
+    }
+    #info-coral p {
+        font-size: 8px;
+    }
+}
+
+#btn-foto-coral {
+    background-color: transparent;
+    color: rgb(74, 143, 74);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 8px;
+    border: 1px dashed rgb(74, 143, 74);
+    padding: 10px 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#btn-foto-coral:hover {
+    background-color: rgb(74, 143, 74);
+    color: #1a1a1a;
+}
+
+#foto-coral-container {
+    display: none; 
+    margin-top: 15px;
+    border: 2px solid rgb(74, 143, 74);
+    border-radius: 5px;
+    overflow: hidden; 
+}
+
+#foto-coral-container.mostrar {
+    display: block;
+    animation: fade-in 0.5s ease; 
+}
+
+#foto-coral-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: saturate(0.8) contrast(1.1); 
+}
+
+@keyframes fade-in {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+
